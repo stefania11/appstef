@@ -5,7 +5,7 @@ ruby '1.9.3'
 gem 'rails', '4.0.0.rc1'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.7'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
@@ -36,6 +36,9 @@ end
 
 group :production do
   gem 'pg', '0.15.1'
+end
+group :development do
+  gem 'sqlite3', '1.3.7'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
