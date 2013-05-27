@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+rails "1.9.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
@@ -32,6 +33,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do
+  gem 'pg', '0.15.1'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
